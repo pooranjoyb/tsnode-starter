@@ -1,0 +1,20 @@
+{
+  "name": "@pooranjoyb/tsnode-starter",
+  "version": "1.0.0",
+  "description": "A CLI tool to create a starter Node.js TypeScript project",
+  "main": "index.js",
+  "bin": {
+    "@pooranjoyb/tsnode-starter": "./index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "fs-extra": "^10.0.0",
+    "yargs": "^17.2.1"
+  },
+  "author": "Pooranjoy Bhattacharya",
+  "license": "MIT"
+}
