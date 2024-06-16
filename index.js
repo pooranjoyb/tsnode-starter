@@ -29,7 +29,7 @@ async function createProject() {
 
     console.log(chalk.magenta('\nThanks for using tsnode-starter! 💖'));
     console.log(chalk.yellow('\nVisit the official GitHub repository:'));
-    console.log(chalk.blue.underline(`${githubRepoUrl}\n`));
+    console.log(chalk.cyan.underline(`${githubRepoUrl}\n`));
   } catch (err) {
     console.error(chalk.red('Error creating project:'), err);
   }
