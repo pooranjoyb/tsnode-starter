@@ -14,16 +14,22 @@ const argv = yargs(hideBin(process.argv))
 const projectName = argv._[0];
 const projectPath = path.join(process.cwd(), projectName);
 const templatePath = path.join(new URL('.', import.meta.url).pathname, 'template');
+const githubRepoUrl = 'https://github.com/pooranjoyb/tsnode-starter';
 
 async function createProject() {
   try {
     await fs.copy(templatePath, projectPath);
-    console.log(chalk.green(`Project ${projectName} created successfully!`));
-    console.log(chalk.green('To get started, run:'));
-    console.log(chalk.cyan(`cd ${projectName}`));
-    console.log(chalk.cyan('npm install'));
-    console.log(chalk.cyan('npm start'));
-    console.log(chalk.cyan('Thanks for using tsnode-starter <3'));
+    console.log(chalk.green(`\nProject ${projectName} created successfully!\n`));
+    console.log(chalk.green('To get started, run:\n'));
+
+    console.log(chalk.cyan(`  cd ${projectName}`));
+    console.log(chalk.cyan('  npm install'));
+    console.log(chalk.cyan('  npm run dev'));
+    console.log(chalk.cyan('  npm run watch'));
+
+    console.log(chalk.magenta('\nThanks for using tsnode-starter! 💖'));
+    console.log(chalk.yellow('\nVisit the official GitHub repository:'));
+    console.log(chalk.blue.underline(`${githubRepoUrl}\n`));
   } catch (err) {
     console.error(chalk.red('Error creating project:'), err);
   }

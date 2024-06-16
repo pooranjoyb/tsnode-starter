@@ -1,9 +1,8 @@
-# tsnode-starter
+# tsnode-starter 
 
 This project was created using the `tsnode-starter` template.
 
 ## Getting Started
-
 This is the your project structure :
 
 ```bash
@@ -21,6 +20,10 @@ your-project-name/
 ├── package.json
 └── README.md
 ```
+
+### Start the development server and watcher :
+
+- Run `npm run dev` and `npm run watch` in two different terminals
 
 ### Prerequisites
 
